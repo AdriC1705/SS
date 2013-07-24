@@ -56,13 +56,20 @@
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
             <div class="container">
- 
+              <ul class = "nav">
+                <li class ="active">
+                  <a href = "Index"> Inicio </a>
+                </li>
+              </ul>
             <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
               <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </a>
+              <form class="navbar-search pull-right">
+                <input type="text" class="search-query" placeholder="Search">
+              </form>
             <!-- Everything you want hidden at 940px or less, place within here -->
               <div class="nav-collapse collapse">
               <!-- .nav, .navbar-search, .navbar-form, etc -->
@@ -73,20 +80,20 @@
       <!--Fin Barra Principal -->
       <!-- Barra Menu -->
         <div class = "row">
-          <div class = "span2">
+          <div class = "span3">
             <ul class="nav nav-list">
               <li class="nav-header">Menú</li>
               <li class = "active"><a href = "Index">Inicio </a></li>
               <li ><a href="Institucion.html">Institución</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Transparencia </a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Tramites y Servicios</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Oferta Educativa</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Departamentos</a></li>
+              <li><a href="Transparencia">Transparencia </a></li>
+              <li><a href="Tramyserv">Tramites y Servicios</a></li>
+              <li><a href="Ofee#">Oferta Educativa</a></li>
+              <li><a href="Dept">Departamentos</a></li>
             </ul>
           </div>
       <!-- Fin Barra Menu-->
       <!--Carousel de imagenes-->
-          <div class = "span9">
+          <div class = "span8">
               <div id="carousel" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="item active">
@@ -132,14 +139,14 @@
       <!--Fin Carousel de imagenes-->
         <!-- tercer ROW -->
           <div class = "row">
-            <div class ="span6 offset2">
+            <div class ="span6 offset3">
               <h2>Convocatorias</h2>
               <div class="well well-large">
                 <p>O noticias recientes del mes, etc..  </p>
                 <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/fluid.html#">View details »</a></p>
               </div>
             </div>
-            <div class = "span3">
+            <div class = "span2">
               <h2>Contactanos</h2>
               <div class="well well-large">
                 <p>Bleh</p>
@@ -150,7 +157,7 @@
         <!--Fin Tercer ROW-->
         <!--Cuarto ROW -->
             <div class = "row">
-              <div class = "span9 offset2">
+              <div class = "span6 offset3">
                 <h2>Ligas de Interes</h2>
                 <div class="well well-large">
                   <p>Bleh</p>
