@@ -44,125 +44,128 @@
 
 <!--/Cuerpo de la pagina -->
   <body>
+    
+
     <!-- Titulo pagina / nombre -->
-      <div class="page-header">
-        <h1><center>Nombre de la escuela </center></h1>
-      </div>
-
-    <!-- Barra Principal -->
-    <div class="navbar navbar-inverse navbar-fixed-bottom">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="http://twitter.github.io/bootstrap/examples/fluid.html#">Project name</a>
-          <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-              Logged in as <a href="http://twitter.github.io/bootstrap/examples/fluid.html#" class="navbar-link">Username</a>
-            </p>
-            <ul class="nav">
-              <!-- Home pagina de inicio (siempre muestra la pagina inicial(index)) -->
-              <li class="active"><a href="Index">Inicio</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#about">About</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <div class = "row">
+      <div class = "span11 offset1">
+        <div class="page-header">
+          <h1><center>Nombre de la escuela </center></h1>
         </div>
-      </div>
-    </div>
-
-    <!-- Menu Lateral Izquierdo -->
-    <div class="container-fluid">
-      <!-- Menu desglosado -->
-      <div class="row-fluid">
-        <div class="span3">
-          <div class="tabbable tabs-left">
-            <ul class="nav nav-tabs">
+      <!-- Barra Principal -->
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <div class="container">
+ 
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+              <div class="nav-collapse collapse">
+              <!-- .nav, .navbar-search, .navbar-form, etc -->
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--Fin Barra Principal -->
+      <!-- Barra Menu -->
+        <div class = "row">
+          <div class = "span2">
+            <ul class="nav nav-list">
+              <li class="nav-header">Menú</li>
               <li class = "active"><a href = "Index">Inicio </a></li>
               <li ><a href="Institucion.html">Institución</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Transparencia</a></li>
+              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Transparencia </a></li>
               <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Tramites y Servicios</a></li>
               <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Oferta Educativa</a></li>
               <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Departamentos</a></li>
             </ul>
-          </div><!--/.tabbable -->
-        </div><!--/span-->
-
-        <div class="span9">
-          <!--Carousel de imagenes-->
-          <div id="carousel" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="uno.jpg" alt="" />
-                <div class="carousel-caption">
-                  <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
-                  <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
-                </div>
-              </div>
-              <div class="item">
-                <img src="dos.jpg" alt="" />
-                <div class="carousel-caption">
-                  <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
-                  <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
-                </div>
-              </div>
-              <div class="item">
-                <img src="tres.jpg" alt="" />
-                <div class="carousel-caption">
-                  <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
-                  <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
-                </div>
-              </div>
-              <div class="item">
-                <img src="cuatro.jpg" alt="" />
-                <div class="carousel-caption">
-                  <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
-                  <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
-                </div>
-              </div>
-              <div class="item">
-                <img src="cinco.jpg" alt="" />
-                <div class="carousel-caption">
-                  <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
-                  <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
-                </div>
-              </div>
-            </div>
-              <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
-              <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
           </div>
-          <!--Fin Carousel de imagenes-->
-          
-
-          <!-- Contenido abajo del carousel -->
-
-          <div class="row-fluid">
-            <div class="span8">
+      <!-- Fin Barra Menu-->
+      <!--Carousel de imagenes-->
+          <div class = "span9">
+              <div id="carousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="uno.jpg" alt="" />
+                    <div class="carousel-caption">
+                      <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
+                      <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="dos.jpg" alt="" />
+                    <div class="carousel-caption">
+                      <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
+                      <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="tres.jpg" alt="" />
+                    <div class="carousel-caption">
+                      <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
+                      <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="cuatro.jpg" alt="" />
+                    <div class="carousel-caption">
+                      <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
+                      <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="cinco.jpg" alt="" />
+                    <div class="carousel-caption">
+                      <p>Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui Insertar texto de la imagen aqui</p>
+                      <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Ver noticia completa</a></li>
+                    </div>
+                  </div>                  
+                </div>
+                <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+              </div>
+          </div>
+      <!--Fin Carousel de imagenes-->
+        <!-- tercer ROW -->
+          <div class = "row">
+            <div class ="span6 offset2">
               <h2>Convocatorias</h2>
               <div class="well well-large">
                 <p>O noticias recientes del mes, etc..  </p>
                 <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/fluid.html#">View details »</a></p>
               </div>
-            </div><!--/span-->
-            <div class="span3">
-              <h2>Ligas de Interes</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/fluid.html#">View details »</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-            <div class="offset8">
-              <h2>Contacto</h2>
-              <p>Para dudas o aclaraciones puedes ponerte en contacto con tu escuela. Aqui iria info como telefonos etc. o una pagina 
-                que redireccione hacia alguna pagina mas desglozada de contacto :P</p>
-              <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/fluid.html#">View details »</a></p>
-            </div><!--/span  offset-->
-          </div><!--/row-->
-        </div><!--/span-->
-      </div><!--/row-->
+            </div>
+            <div class = "span3">
+              <h2>Contactanos</h2>
+              <div class="well well-large">
+                <p>Bleh</p>
+                <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/fluid.html#">View details »</a></p>
+              </div>
+            </div>
+          </div> <!--row -->
+        <!--Fin Tercer ROW-->
+        <!--Cuarto ROW -->
+            <div class = "row">
+              <div class = "span9 offset2">
+                <h2>Ligas de Interes</h2>
+                <div class="well well-large">
+                  <p>Bleh</p>
+                  <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/fluid.html#">View details »</a></p>
+                </div>
+              </div><!--Span-->
+            </div><!--Row-->
+        <!--Fin Cuarto ROW -->  
+    </div> <!-- row -->
+
+
+      
+
+          
+       
 
       <hr>
 
@@ -170,7 +173,7 @@
         <p>© Company 2013</p>
       </footer>
 
-    </div><!--/.fluid-container-->
+  </div>  
 
 
 
