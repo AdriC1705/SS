@@ -44,59 +44,91 @@
 
 <!--/Cuerpo de la pagina -->
   <body>
+    
+
     <!-- Titulo pagina / nombre -->
-      <div class="page-header">
-        <h1><center>Nombre de la escuela </center></h1>
-      </div>
-
-    <!-- Barra Principal -->
-    <div class="navbar navbar-inverse navbar-fixed-bottom">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="http://twitter.github.io/bootstrap/examples/fluid.html#">Project name</a>
-          <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-              Logged in as <a href="http://twitter.github.io/bootstrap/examples/fluid.html#" class="navbar-link">Username</a>
-            </p>
-            <ul class="nav">
-              <!-- Home pagina de inicio (siempre muestra la pagina inicial(index)) -->
-              <li class="active"><a href="Index">Inicio</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#about">About</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <div class = "row">
+      <div class = "span11 offset1">
+        <div class="page-header">
+          <h1><center>Nombre de la escuela </center></h1>
         </div>
-      </div>
-    </div>
-
-    <!-- Menu Lateral Izquierdo -->
-    <div class="container-fluid">
-      <!-- Menu desglosado -->
-      <div class="row-fluid">
-        <div class="span3">
-          <div class="tabbable tabs-left">
-            <ul class="nav nav-tabs">
-              <li ><a href = "Index">Inicio </a></li>
-              <li class ="active"><a href="Institucion">Institución</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Transparencia</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Tramites y Servicios</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Oferta Educativa</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Departamentos</a></li>
+      <!-- Barra Principal -->
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class = "nav">
+                <li>
+                  <a href = "Index"> Inicio </a>
+                </li>
+              </ul>
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+              <form class="navbar-search pull-right">
+                <input type="text" class="search-query" placeholder="Search">
+              </form>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+              <div class="nav-collapse collapse">
+              <!-- .nav, .navbar-search, .navbar-form, etc -->
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--Fin Barra Principal -->
+      <!-- Barra Menu -->
+        <div class = "row">
+          <div class = "span3">
+            <ul class="nav nav-list">
+              <li class="nav-header">Menú</li>
+              <li><a href = "Index">Inicio </a></li>
+              <li class ="active" ><a href="Institucion.html">Institución</a></li>
+                <ul class="dropdown-submenu">
+                  <li><a href="Mision">Mision</a></li>
+                  <li><a href="Mision">Vision</a></li>
+                  <li><a href="Mision">Valores</a></li>
+                  <li><a href="Mision">Politica de Calidad</a></li>
+                  <li><a href="Mision">Objetivos de Calidad</a></li>
+                  <li><a href="Mision">Organigrama</a></li>
+                  <li><a href="Mision">Directorio</a></li>
+                  <li><a href="Mision">Instalaciones</a></li>
+                  <li><a href="Mision">Himno</a></li>
+                  <li><a href="Mision">Historia</a></li>
+                  <li><a href="Mision">Titular y C.V</a></li>
+                  <li><a href="Mision">Docentes</a></li>
+                  <li><a href="Mision">Mapa del Sitio</a></li>
+                </ul>
+              <li><a href="Transparencia">Transparencia </a></li>
+              <li><a href="Tramyserv">Tramites y Servicios</a></li>
+              <li><a href="Ofee#">Oferta Educativa</a></li>
+              <li><a href="Dept">Departamentos</a></li>
             </ul>
-          </div><!--/.tabbable -->
-        </div><!--/span-->
+          </div>
+      <!-- Fin Barra Menu-->
+      <!-- Area de la informacion -->
+          <div class = "span8">
+            <div class="well well-large">
+              <p>INFO  </p>
+            </div>
+          </div>
+      <!-- Fin area de info -->
+    </div> <!-- row -->
+
+
+      
+
+          
+       
+
       <hr>
 
       <footer>
         <p>© Company 2013</p>
       </footer>
-  	</div>
-    </div><!--/.fluid-container-->
+
+  </div>  
 
 
 
@@ -116,6 +148,5 @@
     <script src="./javascript/bootstrap-collapse.js"></script>
     <script src="./javascript/bootstrap-carousel.js"></script>
     <script src="./javascript/bootstrap-typeahead.js"></script>
-  
 
 </body></html>
